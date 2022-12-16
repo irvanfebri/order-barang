@@ -88,7 +88,7 @@
 <script>
 $('#categories').select2({
   ajax: {
-    url: 'http://larashop.test/ajax/categories/search',
+    url: 'http://localhost:8000/ajax/categories/search',
     processResults: function(data){
       return {
         results: data.map(function(item){return {id: item.id, text: item.name} })
